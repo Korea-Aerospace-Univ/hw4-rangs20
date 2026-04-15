@@ -17,7 +17,7 @@ int main(void)
 		{
 			printf("%d<?", number);
 		}
-		else {printf("%d==?\n", number); }
+		else {printf("%d==?", number); }
 		printf("\n");
 	} while (number != correct);
 
