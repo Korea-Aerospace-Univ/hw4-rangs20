@@ -7,7 +7,7 @@ int main(void) {
 	int MAXalpha = 0, MAXdigit = 0;
 	for (int i = 1; i <= N; i++)
 	{
-		scanf("%c", &chr);
+		scanf(" %c", &chr);
 		if ('a' <= chr && chr <= 'z') {
 			alpha++;
 			digit = 0;
