@@ -16,7 +16,7 @@ int main(void) {
 			digit++;
 			alpha = 0;
 		}
-		else digit = 0; alpha = 0;
+		else {digit = 0; alpha = 0;}
 
 		if (digit > MAXdigit) {
 			MAXdigit = digit;
