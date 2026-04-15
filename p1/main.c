@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include <stdio.h>	
+
 int main(void)
 {
-	int correct;
+	int correct, number;
 	scanf("%d", &correct);
-	int number;
-	scanf("%d", &number);
-	int i = 1;
+	int i = 0;
 	do
 	{
+		(void)scanf("%d", &number);
+		i++;
 		if (number > correct)
 		{
 			printf("%d>?", number);
@@ -15,11 +16,12 @@ int main(void)
 		else if (number < correct)
 		{
 			printf("%d<?", number);
-		} else  printf("%d==?\n", number);
+		}
+		else {printf("%d==?\n", number); }
 		printf("\n");
-		(void)scanf("%d", &number);
-		i++;
 	} while (number != correct);
 
 	printf("%d",i);
+
+	return 0;
 }
