@@ -28,5 +28,5 @@ int main(void) {
 	}
 	printf("%d\n", MAXalpha);
 	printf("%d\n",MAXdigit);
-
+	return 0;
 }
