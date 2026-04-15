@@ -1,5 +1,4 @@
-#include <stdio.h>						
-
+#include <stdio.h>
 int main(void)
 {
 	int correct;
@@ -16,12 +15,11 @@ int main(void)
 		else if (number < correct)
 		{
 			printf("%d<?", number);
-		}
+		} else  printf("%d==?\n", number);
 		printf("\n");
 		(void)scanf("%d", &number);
 		i++;
-
 	} while (number != correct);
-	if (number == correct) printf("%d==?\n", number);
+
 	printf("%d",i);
 }
